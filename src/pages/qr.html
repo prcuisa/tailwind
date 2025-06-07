@@ -252,8 +252,8 @@
         const btn = document.createElement("button");
         btn.textContent = "Download";
         btn.onclick = () => {
-          const cleanName = sanitizeFileName(url);
-          qrCode.download({ name: `qr_${cleanName}`, extension: "png" });
+          const cleanNamez = sanitizeFileName(url);
+          qrCode.download({ name: `qr_${cleanNamez}`, extension: "png" });
         };
 
         container.appendChild(qrWrapper);
